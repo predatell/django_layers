@@ -44,7 +44,7 @@ class AppLayerFinder(BaseFinder):
                     self.storages[app][layer] = app_storage
         super(AppLayerFinder, self).__init__(*args, **kwargs)
 
-    def find(self, path, all=False, layer=None):
+    def find(self, path, all=False, layer=None, **kwargs):
         """
         Looks for files in the app directories.
         """
